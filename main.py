@@ -55,15 +55,15 @@ for img_file in img_files:
     img_path = os.path.join(output_folder, img_file)
     predictions = predict_image(model, img_path)
 
+    # Exibir as predições
+    print(f"Predictions for {img_file}:")
+    for pred in predictions:
+        print(f"{pred[1]}: {pred[2]*100:.2f}%")
+    print("\n")
+
     # Carregar e exibir a imagem
     img = image.load_img(img_path, target_size=(224, 224))
     plt.imshow(img)
     plt.axis('off')
     plt.title(img_file)
     plt.show()
-
-    # Exibir as predições
-    print(f"Predictions for {img_file}:")
-    for pred in predictions:
-        print(f"{pred[1]}: {pred[2]*100:.2f}%")
-    print("\n")
