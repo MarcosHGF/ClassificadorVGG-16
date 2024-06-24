@@ -5,6 +5,6 @@ Classificador de imagem de python
 
 #Bibliotecas: os, numpy, tensorflow, matplotlib, PIL
 
-##Imagens de : https://unsplash.com/g
+##Imagens de : https://unsplash.com
 
 ##Antes de usar instalar os pacotes: pip install numpy matplotlib tensorflow pillow, pip install tensorflow
